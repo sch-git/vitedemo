@@ -22,7 +22,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "types": [
-      "element-plus/global"
+      "element-plus/global",
     ]
   },
   "include": [
