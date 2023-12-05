@@ -15,4 +15,7 @@ export default defineConfig({
             resolvers: [ElementPlusResolver()],
         }),
     ],
+    server: {
+        port: 5137,
+    }
 })
