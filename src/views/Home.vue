@@ -1,10 +1,14 @@
 <script setup lang="ts">
-import Border from "../components/study/Border.vue";
+import BorderRadio from "../components/study/BorderRadio.vue";
 import {ref} from "vue";
+import BorderShadow from "../components/study/BorderShadow.vue";
+import Gradients from "../components/study/Gradients.vue";
 
 const value = ref('null')
 const options = [
-  {value: 'border', label: 'border'},
+  {value: 'border-radio', label: 'border-radio'},
+  {value: 'border-shadow', label: 'border-shadow'},
+  {value: 'gradients', label: 'gradients'},
   {value: 'null', label: 'null'},
 ]
 
@@ -14,7 +18,6 @@ function selectClick(value: string) {
 </script>
 
 <template>
-  <h1 :hidden="value == 'null'">Home</h1>
   <el-select filterable v-model="value" @change="selectClick(value)" class="m-2" placeholder="Select" size="large">
     <el-option
         v-for="item in options"
@@ -23,7 +26,9 @@ function selectClick(value: string) {
         :value="item.value"
     />
   </el-select>
-  <Border v-if="value == 'border'"/>
+  <BorderRadio v-if="value == 'border-radio'"/>
+  <BorderShadow v-if="value == 'border-shadow'"/>
+  <Gradients v-if="value == 'gradients'"/>
 </template>
 
 <style scoped>

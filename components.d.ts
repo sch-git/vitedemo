@@ -7,7 +7,9 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    Border: typeof import('./src/components/study/Border.vue')['default']
+    Border: typeof import('./src/components/study/BorderRadio.vue')['default']
+    BorderRadio: typeof import('./src/components/study/BorderRadio.vue')['default']
+    BorderShadow: typeof import('./src/components/study/BorderShadow.vue')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElContainer: typeof import('element-plus/es')['ElContainer']
@@ -17,6 +19,9 @@ declare module 'vue' {
     ElMain: typeof import('element-plus/es')['ElMain']
     ElOption: typeof import('element-plus/es')['ElOption']
     ElSelect: typeof import('element-plus/es')['ElSelect']
+    ElTable: typeof import('element-plus/es')['ElTable']
+    ElTableColumn: typeof import('element-plus/es')['ElTableColumn']
+    Gradients: typeof import('./src/components/study/Gradients.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

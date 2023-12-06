@@ -16,6 +16,7 @@ export default defineConfig({
         }),
     ],
     server: {
-        port: 5137,
+        open: true, // 自动打开浏览器
+        port: 5137, // 端口号
     }
 })
