@@ -5,7 +5,16 @@
 <template>
   <div class="common-layout">
     <el-container>
-      <el-aside class="aside">Aside</el-aside>
+      <el-aside class="aside">
+        <el-row class="menu-title">
+          <el-col :span="24">
+            <el-button type="primary">Primary</el-button>
+          </el-col>
+        </el-row>
+        <el-scrollbar height="70vh">
+          <p v-for="item in 20" :key="item" class="scrollbar-demo-item">{{ item }}</p>
+        </el-scrollbar>
+      </el-aside>
       <el-container>
         <el-main class="el-main">Main</el-main>
         <el-footer>Footer</el-footer>
@@ -27,6 +36,11 @@
 
 .el-main {
   width: 80vw;
-  min-height: 100vh;
+  min-height: 80vh;
+}
+
+.menu-title {
+  height: 15vh;
+  place-items: center;
 }
 </style>
