@@ -7,7 +7,7 @@
     <el-container>
       <el-aside class="aside">Aside</el-aside>
       <el-container>
-        <el-main>Main</el-main>
+        <el-main class="el-main">Main</el-main>
         <el-footer>Footer</el-footer>
       </el-container>
     </el-container>
@@ -22,6 +22,11 @@
 
 .aside {
   width: 20vw;
+  min-height: 100vh;
+}
+
+.el-main {
+  width: 80vw;
   min-height: 100vh;
 }
 </style>
