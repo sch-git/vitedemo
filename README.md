@@ -34,4 +34,6 @@ npm i pinia
 npm i axios
 npm i element-plus
 npm i -D sass sass-loader
+npm install -D unplugin-icons
+npm install @element-plus/icons-vue
 ```
