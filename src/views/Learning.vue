@@ -2,8 +2,10 @@
 import {ref} from "vue";
 
 const progressItems = ref([
-  {Label: 'Erlang', Percentage: 0, Color: 'blue'},
-  {Label: 'GO', Percentage: 100, Color: 'green'},
+  {Label: 'Erlang', Percentage: 10, Color: '#0099FF'},
+  {Label: 'GO', Percentage: 100, Color: '#00CC66'},
+  {Label: 'css3', Percentage: 10, Color: '#FFFF33'},
+  {Label: '大话设计模式', Percentage: 20, Color: '#99FFCC'},
 ])
 </script>
 

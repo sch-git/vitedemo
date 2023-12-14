@@ -1,4 +1,4 @@
-import {axios, AxiosResponse, InternalAxiosRequestConfig} from 'axios';
+import axios, {AxiosError, AxiosResponse, InternalAxiosRequestConfig} from 'axios';
 import baseURL_dev from "../config/base.ts";
 
 const apiReq = axios.create({
@@ -9,17 +9,20 @@ const apiReq = axios.create({
 // 请求拦截器
 apiReq.interceptors.request.use(
     (config: InternalAxiosRequestConfig) => {
+        return config;
     },
-    (err) => {
-
+    (error: AxiosError) => {
+        return Promise.reject(error);
     }
 )
 
 // 响应拦截器
 apiReq.interceptors.response.use(
     (response: AxiosResponse) => {
+        return response
     },
-    (err) => {
+    (err: AxiosError) => {
+        return Promise.reject(err);
     }
 )
 
