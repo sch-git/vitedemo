@@ -6,6 +6,8 @@ const progressItems = ref([
   {Label: 'GO', Percentage: 100, Color: '#00CC66'},
   {Label: 'css3', Percentage: 10, Color: '#FFFF33'},
   {Label: '大话设计模式', Percentage: 20, Color: '#99FFCC'},
+  {Label: 'python', Percentage: 20, Color: '#99FF55'},
+  {Label: 'c#', Percentage: 20, Color: '#66EE99'},
 ])
 </script>
 
